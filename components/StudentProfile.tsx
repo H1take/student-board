@@ -5,6 +5,8 @@ import {IStudent} from "@/components/Home";
 import Image from "next/image";
 
 const StudentProfile = ({ student }: { student: IStudent | undefined }) => {
+    console.log(student)
+
     return(
         <Flex mt={['50px', '100px']} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
             {student?.photo &&
@@ -13,7 +15,7 @@ const StudentProfile = ({ student }: { student: IStudent | undefined }) => {
             <Text fontSize={'24px'} as={'b'}>
                 {student?.name}
             </Text>
-            <Text fontSize={'18px'} width={['370px', '1500px']} fontWeight={500} mb={'50px'}>
+            <Text fontSize={'18px'} width={['370px', '1500px']} whiteSpace={'pre'} fontWeight={500} mb={'50px'}>
                 {student?.description}
             </Text>
         </Flex>

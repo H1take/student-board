@@ -13,7 +13,7 @@ const StudentCard: FC<{ student: IStudent }> = ({ student }) => {
 
     return(
         <Flex flexDirection={'column'} alignItems={'center'} width={['150px', '200px']} height={['200px', '270px']} cursor={'pointer'} onClick={handleRedirect}>
-            <Image style={{ borderRadius: '0.5rem' }} width={['130px', '200px']} height={['160px', '240px']} src={student.photo} alt={student.name} />
+            <Image style={{ borderRadius: '0.5rem' }} width={['130px', '250px']} height={['160px', '300px']} src={student.photo} alt={student.name} />
             <Text fontSize={'18px'} as={'b'}>{student.name}</Text>
         </Flex>
     );
